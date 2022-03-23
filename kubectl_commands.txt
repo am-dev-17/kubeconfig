@@ -1,0 +1,9 @@
+kubectl run nginx --image=nginx -> Deploys a pod with the nginx 
+
+
+kubectl get pod <pod-name> -o yaml > pod-definition.yaml
+kubectl edit pod <pod-name>
+
+kubectl replace -f replicaset-definition.yaml -> Will update a rs 
+kubectl scale --replicas=6 replicaset myapp-replicaset
+
